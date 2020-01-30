@@ -1,4 +1,4 @@
 FROM maven
 WORKDIR /ConsumerService
 COPY app/ .
-RUN mvn clean install
+RUN mvn dependency:resolve
